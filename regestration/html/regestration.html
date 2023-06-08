@@ -1,0 +1,70 @@
+<html>
+
+
+<title>Regestration</title>
+<head>
+    {% load static %}
+    <script src="{% static 'admin/js/regscript.js'%}"></script>
+</head>
+<style>
+    .reg-detail{
+        background-color: white;
+    }
+    
+</style>  
+
+<body>
+    <div class="reg-detail">
+        <form method="get" class="regestration">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter Username"/>
+            <br>
+            <br>
+            <label>Phone:</label>
+            
+            <input type="text" placeholder="Enter Phone number"/>
+            <br>
+            <br>
+            <label>E-mail</label>
+            <input type="email" placeholder="Enter valid Email"/>
+            <br>
+            <br>
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password"/>
+            <br>
+            <br>
+            <label>Renter Passwordl</label>
+            <input type="password" placeholder="Enter Confirm Password"/>
+            <br>
+            <br>
+            <label>OTP:</label>
+            <select>
+                <option disabled selected value="">select Option</option>
+                <option value = "Phone">Phone</option> 
+                <option value ="Email">Email</option>
+            </select>
+            <button>Send</button>
+            <br>
+            <br>
+            <label>Enter OTP:</label>
+            <input type="text" placeholder="Enter OTP"/>
+            <br>
+            <br>
+            <label>Profile Photo:</label>
+            <input type="file"/>
+            <br>
+            <br>
+            <input type="submit" value="Sign Up" onclick= "return regfunc()"/>
+            
+            
+            
+
+            
+
+
+
+
+        </form>
+     </div>   
+</body>
+</html>
